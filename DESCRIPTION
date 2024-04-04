@@ -1,12 +1,25 @@
 Package: averageZscore
-Title: What the Package Does (One Line, Title Case)
+Title: Simulate two-arm trial and calculate power for average Z-score approach
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Sarah", "Rathwell", email="srathwel@ualberta.ca", role=c("aut","cre"),
+           comment=c(ORCID = "0000-0003-3176-994X"))
+Maintainer: Sarah Rathwell <srathwel@ualberta.ca>
+URL: https://github.com/sarah-0k/wcep
+BugReports: https://github.com/sarah-0k/wcep
+Description: Simulate two-arm trial and calculate power for average Z-score approach.
+License: MIT + file LICENSE
 Encoding: UTF-8
+Language: en-us
+Depends: R (>= 4.0)
+Imports: 
+         dplyr (>= 1.1.0),
+         MASS (>= 7.3-60),
+         stats (>= 3.6.1)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Collate: 
+    'simulation_results.R'
+    'zscore_function.R'
+    'generate_datasets.R'
+    'average_z_score_power.R'
