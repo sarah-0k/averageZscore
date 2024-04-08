@@ -178,6 +178,9 @@ average_z_score_power <- function(num_sims,
     if(sum(!(min(cor_mat) >= -1 & max(cor_mat) <= 1)) > 0){
       return(noquote("Please ensure all correlations are between -1 and 1."))
     }
+    if(isSymmetric(cor_mat) == F){
+      return(noquote("Please ensure correlation matrix is symmetric."))
+    }
   }
 
 
